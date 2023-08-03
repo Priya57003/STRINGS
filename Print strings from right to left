@@ -1,0 +1,21 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args)
+	{
+		 Scanner sc = new Scanner(System.in);
+        String str1 = sc.nextLine();
+        StringBuilder sb = new StringBuilder(str1);
+        String  reverse=sb.reverse()+"";
+        System.out.println(Character.toUpperCase(reverse.charAt(0))+reverse.substring(1));
+        
+    
+	}
+}
+-------------------------------------------------------------
+
+Sample Input :
+jennyfer
+Sample Output :
+Refynnej
+--------------------------------------------------------------
