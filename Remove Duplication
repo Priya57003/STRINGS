@@ -1,0 +1,32 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args)
+	{
+		Scanner sc = new Scanner(System.in);
+        String str1 = sc.nextLine();
+        StringBuilder str2 = new StringBuilder();
+        for(int i=0;i<str1.length();i++)
+        {
+            String c = str1.charAt(i)+"";
+            if(str2.indexOf(c)==-1)
+            {
+               str2.append(c);
+            }
+        }
+        if(str2.length()>=3)
+        {
+            System.out.println("Wonder");
+        }
+        else
+        {
+            System.out.println("-1");
+        }
+	}
+}
+------------------------------------------------------------------
+Sample Input :
+aabbcc
+Sample Output :
+Wonder
+--------------------------------------------------------------------
