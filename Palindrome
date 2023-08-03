@@ -1,0 +1,19 @@
+import java.util.*;
+class Main
+{
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+        String str1 = sc.nextLine();
+        StringBuilder sb = new StringBuilder(str1);
+        String str2=sb.reverse()+"";
+        if(str1.contentEquals(str2))
+        {
+            System.out.println("1");
+        }
+        else
+        {
+            System.out.println("0");
+        }
+}
+}
