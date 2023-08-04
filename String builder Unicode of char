@@ -1,0 +1,14 @@
+public class Main
+{
+	public static void main(String[] args)
+	{
+		String str1="Sussmitha";
+		StringBuilder str2 = new StringBuilder();
+		System.out.println("ASCILL VALUE FOR EACHJ CHARACTER: ");
+		for(int i=0;i<str1.length();i++)
+		{
+		int unicode = str1.codePointAt(i);
+		System.out.println(unicode);
+		}
+	}
+}
