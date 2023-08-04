@@ -1,1 +1,36 @@
-
+public class Main
+{
+	public static void main(String[] args)
+	{
+		String str1="Sussmitha";
+		int count1 =0;
+		int count2 =0;
+		StringBuilder str2 = new StringBuilder();
+		for(int i=0;i<str1.length();i++)
+		{
+		   String res = str1.charAt(i)+"";
+		if("aeiouAEIOU".contains(res))
+		{
+		    count1++;
+		}
+		else 
+		{
+		    count2++;
+		}
+		}
+		System.out.println("Num of vowels in string Sussmitha :"+count1);
+		System.out.println("Num of consonants in string Sussmitha :"+count2);
+		System.out.println("************************************************");
+	    int count3=0;
+	    for(int i=0;i<str1.length();i++)
+		{
+		    String res = str1.charAt(i)+"";
+		    if(str2.indexOf(res)==-1)
+		    {
+		        str2.append(res);
+		        count3++;
+		    }
+		}
+		System.out.println("Without Repetation in string Sussmitha :"+str2+" "+count3);
+	}
+}
