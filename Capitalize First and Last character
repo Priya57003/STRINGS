@@ -1,0 +1,14 @@
+public class Main
+{
+	public static void main(String[] args)
+	{
+	String care = "cogo";
+    
+	for(int i=0;i<=care.length()-1;i++)
+	{
+	    care+=Character.toUpperCase(care.charAt(0))+care.substring(care.charAt(i+1),care.length()-1)+Character.toUpperCase(care.charAt(care.length()-1));
+	   
+	}
+     System.out.println(care);
+	}
+}
