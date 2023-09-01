@@ -1,0 +1,18 @@
+public class Main
+{
+	public static void main(String[] args) 
+	{
+		String var1 = "Priya";
+		String result="";
+		for(int i=0;i<var1.length();i++)
+		{
+		    if(var1.charAt(i)>='A' && var1.charAt(i)<='Z')
+	         result+=Character.toLowerCase(var1.charAt(i))+"";
+	        else if(var1.charAt(i)>='a' && var1.charAt(i)<='z')
+	         result+=Character.toUpperCase(var1.charAt(i))+"";
+		
+		}
+		System.out.println(result);
+		
+}
+}
